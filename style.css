@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Poppins:wght@500&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    gap: 80px;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+    background: #262525;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    position: relative;
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin: 0 10px;
+    position: relative;
+}
+
+nav li a::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 0.2rem;
+    left: 0;
+    bottom: 10px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.4s;
+}
+
+nav li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+main {
+    display: flex;
+}
+
+.left-container {
+    background: #262525;
+    width: 50vw;
+    height: 92vh;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icons .fa-brands {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 500px;
+}
+
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(white, aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content {
+    margin-left: 4rem;
+}
+
+.content .intro {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.content .intro span {
+    color: aqua;
+}
+
+.content h1 {
+    font-size: 4rem;
+    color: aqua;
+}
+
+.content .details {
+    font-size: 1.5rem;
+    color: white;
+    max-width: 40rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.btn button {
+    border: 0.1rem solid aqua;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:nth-child(1) {
+    background-color: aqua;
+}
+
+button:nth-child(2) {
+    background-color: transparent;
+    color: aqua;
+    margin-left: 40px;
+}
+
+button:nth-child(1):hover {
+    background-color: transparent;
+    color: aqua;
+}
+
+button:nth-child(2):hover {
+    background-color: aqua;
+    color: black;
+}
+
+.right-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background: #262525;
+    width: 50vw;
+    height: 92vh;
+    position: relative;
+}
+
+.design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure it’s positioned correctly */
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle:nth-child(1) {
+    width: 38rem;
+    background: linear-gradient(-90deg, aqua 50%, grey 50%);
+}
+
+.circle:nth-child(2) {
+    width: 30rem;
+    background-color: pink;
+    background-image: url('portfolio\ image.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+    z-index: 1;
+}
