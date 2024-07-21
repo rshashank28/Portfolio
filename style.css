@@ -59,6 +59,7 @@ nav li a:hover::after {
 
 main {
     display: flex;
+      flex-wrap: wrap;
 }
 
 .left-container {
@@ -68,6 +69,7 @@ main {
     padding-left: 50px;
     display: flex;
     align-items: center;
+       justify-content: center;
     flex-wrap: wrap;
 }
 
